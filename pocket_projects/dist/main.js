@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _war
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"htmlGenerator\": () => (/* binding */ htmlGenerator)\n/* harmony export */ });\n\nconst partyHeader = document.getElementById('party');\n\nconst htmlGenerator = (string, htmlElement) => {\n    let element = document.createElement(\"p\");\n    element.innerText = string;\n    htmlElement.append(element);\n};\n\n// export default htmlGenerator;\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/warmup.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"htmlGenerator\": () => (/* binding */ htmlGenerator)\n/* harmony export */ });\n\nconst partyHeader = document.getElementById('party');\n\nconst htmlGenerator = (string, htmlElement) => {\n    let element = document.createElement(\"p\");\n    element.innerText = string;\n    if (htmlElement.hasChildNodes()){\n        const childs = Array.from(htmlElement.children, (child) => {child.remove();})\n       \n    }\n    htmlElement.append(element);\n};\n\n// export default htmlGenerator;\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/warmup.js?");
 
 /***/ })
 
